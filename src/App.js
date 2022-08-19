@@ -1,9 +1,12 @@
 import React from "react";
+import Muscles from "./components/Muscles";
 
 const App = () =>{
     return(
         <div>
-            Test
+            
+            <Muscles />
+
         </div>
     );
 };
