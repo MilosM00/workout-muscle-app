@@ -3,6 +3,10 @@ import "./Muscles.css";
 import manImage from "../images/man.png";
 import manChestImage from "../images/man-chest.jpg";
 import manTrapsImage from "../images/man-traps.jpg";
+import manLowerTrapsImage from "../images/man-lower-traps.jpg";
+import manLatsImage from "../images/man-lats.jpg";
+import manLowerBackImage from "../images/man-lower-back.jpg";
+import manAbdominalsImage from "../images/man-abdominals.jpg";
 
 const Muscles = () =>{
 
@@ -12,13 +16,15 @@ const Muscles = () =>{
 
         <div className="muscles">
 
-            {
-                <div>
-                    {image === 0 && <img src={manImage} alt="muscles" className="image-muscles"/>}
-                    {image === 1 && <img src={manChestImage} alt="muscles" className="image-muscles"/>}
-                    {image === 2 && <img src={manTrapsImage} alt="muscles" className="image-muscles"/>}
-                </div>
-            }
+            <div>
+                {image === 0 && <img src={manImage} alt="muscles" className="image-muscles"/>}
+                {image === 1 && <img src={manChestImage} alt="muscles" className="image-muscles"/>}
+                {image === 2 && <img src={manTrapsImage} alt="muscles" className="image-muscles"/>}
+                {image === 3 && <img src={manLowerTrapsImage} alt="muscles" className="image-muscles"/>}
+                {image === 4 && <img src={manLatsImage} alt="muscles" className="image-muscles"/>}
+                {image === 5 && <img src={manLowerBackImage} alt="muscles" className="image-muscles"/>}
+                {image === 6 && <img src={manAbdominalsImage} alt="muscles" className="image-muscles"/>}
+            </div>
 
             <div className="center-muscles">
 
@@ -42,24 +48,32 @@ const Muscles = () =>{
 
                     <button 
                         className="button-muscle"
+                        onMouseEnter={() => setImage(3)} 
+                        onMouseLeave={() => setImage(0)}
                     >
                         Lower traps
                     </button>
 
                     <button 
                         className="button-muscle"
+                        onMouseEnter={() => setImage(4)} 
+                        onMouseLeave={() => setImage(0)}
                     >
                         Lats
                     </button>
 
                     <button 
                         className="button-muscle"
+                        onMouseEnter={() => setImage(5)} 
+                        onMouseLeave={() => setImage(0)}
                     >
                         Lower back
                     </button>
 
                     <button 
                         className="button-muscle"
+                        onMouseEnter={() => setImage(6)} 
+                        onMouseLeave={() => setImage(0)}
                     >
                         Abdominals
                     </button>
