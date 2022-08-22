@@ -1,5 +1,5 @@
 import React from "react";
-import "./Muscles.css";
+import "../style/Muscles.css";
 import manImage from "../images/man.png";
 import manChestImage from "../images/man-chest.jpg";
 import manTrapsImage from "../images/man-traps.jpg";
@@ -11,6 +11,10 @@ import manShouldersImage from "../images/man-shoulders.jpg";
 import manBicepsImage from "../images/man-biceps.jpg";
 import manTricepsImage from "../images/man-triceps.jpg";
 import manForearmsImage from "../images/man-forearms.jpg";
+import manQuadricepsImage from "../images/man-quadriceps.jpg";
+import manHamstringsImage from "../images/man-hamstrings.jpg";
+import manGlutesImage from "../images/man-glutes.jpg";
+import manCalvesImage from "../images/man-calves.jpg";
 
 const Muscles = () =>{
 
@@ -32,12 +36,16 @@ const Muscles = () =>{
                 {image === 8 && <img src={manBicepsImage} alt="muscles" className="image-muscles"/>}
                 {image === 9 && <img src={manTricepsImage} alt="muscles" className="image-muscles"/>}
                 {image === 10 && <img src={manForearmsImage} alt="muscles" className="image-muscles"/>}
+                {image === 11 && <img src={manQuadricepsImage} alt="muscles" className="image-muscles"/>}
+                {image === 12 && <img src={manHamstringsImage} alt="muscles" className="image-muscles"/>}
+                {image === 13 && <img src={manGlutesImage} alt="muscles" className="image-muscles"/>}
+                {image === 14 && <img src={manCalvesImage} alt="muscles" className="image-muscles"/>}
             </div>
 
             <div className="center-muscles">
 
                 <div className="inline-muscles">
-
+                    
                     <button 
                         className="button-muscle" 
                         onMouseEnter={() => setImage(1)} 
@@ -45,6 +53,18 @@ const Muscles = () =>{
                     >
                         Chest
                     </button>
+
+                    <button 
+                        className="button-muscle"
+                        onMouseEnter={() => setImage(6)} 
+                        onMouseLeave={() => setImage(0)}
+                    >
+                        Abdominals
+                    </button>
+
+                </div>
+
+                <div className="inline-muscles">
 
                     <button 
                         className="button-muscle"
@@ -76,14 +96,6 @@ const Muscles = () =>{
                         onMouseLeave={() => setImage(0)}
                     >
                         Lower back
-                    </button>
-
-                    <button 
-                        className="button-muscle"
-                        onMouseEnter={() => setImage(6)} 
-                        onMouseLeave={() => setImage(0)}
-                    >
-                        Abdominals
                     </button>
 
                 </div>
@@ -126,10 +138,37 @@ const Muscles = () =>{
 
                 <div className="inline-muscles">
 
-                    <button className="button-muscle">Quadriceps</button>
-                    <button className="button-muscle">Hamstrings</button>
-                    <button className="button-muscle">Glutes</button>
-                    <button className="button-muscle">Calves</button>
+                    <button 
+                        className="button-muscle"
+                        onMouseEnter={() => setImage(11)} 
+                        onMouseLeave={() => setImage(0)}
+                    >
+                        Quadriceps
+                    </button>
+
+                    <button 
+                        className="button-muscle"
+                        onMouseEnter={() => setImage(12)} 
+                        onMouseLeave={() => setImage(0)}
+                    >
+                        Hamstrings
+                    </button>
+
+                    <button 
+                        className="button-muscle"
+                        onMouseEnter={() => setImage(13)} 
+                        onMouseLeave={() => setImage(0)}
+                    >
+                        Glutes
+                    </button>
+
+                    <button 
+                        className="button-muscle"
+                        onMouseEnter={() => setImage(14)} 
+                        onMouseLeave={() => setImage(0)}
+                    >
+                        Calves
+                    </button>
 
                 </div>
 
