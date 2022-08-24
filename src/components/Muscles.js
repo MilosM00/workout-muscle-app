@@ -16,7 +16,7 @@ import manHamstringsImage from "../images/man-hamstrings.jpg";
 import manGlutesImage from "../images/man-glutes.jpg";
 import manCalvesImage from "../images/man-calves.jpg";
 
-const Muscles = () =>{
+const Muscles = (props) =>{
 
     const [image, setImage] = React.useState(0);
 
@@ -50,6 +50,7 @@ const Muscles = () =>{
                         className="button-muscle" 
                         onMouseEnter={() => setImage(1)} 
                         onMouseLeave={() => setImage(0)}
+                        onClick={props.chestEvent}
                     >
                         Chest
                     </button>
