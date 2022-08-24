@@ -1,4 +1,6 @@
 .navbar{
+    position: sticky;
+    top: 0;
     font-family: 'Kanit', sans-serif;
     padding: 10px 0;
     background-color: rgb(255,255,255);
