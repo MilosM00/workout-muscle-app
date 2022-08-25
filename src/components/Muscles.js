@@ -50,7 +50,7 @@ const Muscles = (props) =>{
                         className="button-muscle" 
                         onMouseEnter={() => setImage(1)} 
                         onMouseLeave={() => setImage(0)}
-                        onClick={props.chestEvent}
+                        onClick={props.displayChest}
                     >
                         Chest
                     </button>
