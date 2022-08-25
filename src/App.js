@@ -8,13 +8,13 @@ const App = () =>{
     const [muscles, setMuscles] = React.useState(true);
     const [chest, setChest] = React.useState(false);
 
-    const scrollUp = () =>{
+    const displayMuscles = () =>{
         document.body.scrollIntoView();
         setMuscles(true);
         setChest(false);
     };
 
-    const chestEvent = () =>{
+    const displayChest = () =>{
         setMuscles(false);
         setChest(true);
     };
@@ -23,18 +23,16 @@ const App = () =>{
         <div>
             
             <Navbar 
-                scrollUp={scrollUp}
+                displayMuscles={displayMuscles}
             />
 
             {muscles === true && 
                 <Muscles 
-                    chestEvent={chestEvent}
+                    displayChest={displayChest}
                 />
             }
 
-            {chest === true && 
-                <Chest />
-            }
+            {chest === true && <Chest />}
 
         </div>
     );
