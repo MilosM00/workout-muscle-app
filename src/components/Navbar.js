@@ -1,13 +1,13 @@
 import React from "react";
 import "../style/Navbar.css";
 
-const Navbar = ({scrollUp}) =>{
+const Navbar = ({displayMuscles}) =>{
     return(
 
         <div className="navbar">
             <p 
                 className="navbar-logo"
-                onClick={scrollUp}
+                onClick={displayMuscles}
             >
                 WMA 💪
             </p>
