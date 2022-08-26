@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/Chest.css";
 
-const Chest = () =>{
+const Chest = ({displayMuscles}) =>{
     return(
         <div className="chest">
 
@@ -49,6 +49,11 @@ const Chest = () =>{
                 <img src="https://images.squarespace-cdn.com/content/v1/5ef36da663cc604ee0e0796b/1606759782564-TNOPD08O2M0YIR7NQXD6/widegrippushup-1508248881.gif" alt="chest" width="400" height="350"/>
                 <img src="https://hips.hearstapps.com/ame-prod-menshealth-assets.s3.amazonaws.com/main/assets/dips.gif" alt="chest" width="500" height="350" />
             </div>
+
+            <button 
+                className="choose-button"
+                onClick={displayMuscles}
+            >Choose Other Muscle</button>
 
         </div>
     );
