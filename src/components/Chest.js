@@ -8,7 +8,7 @@ const Chest = ({displayMuscles}) =>{
             <p className="title-chest">Chest Exercises</p>
 
             <div className="info-chest">
-                <p className="title-info">Barbells</p>
+                <p className="title-info-chest">Barbells</p>
                 <p>
                     The best chest exercises with barbells are bench press and incline bench press. <br />
                     The bench press strikes your middle chest and a little of the bottom chest. <br />
@@ -22,7 +22,7 @@ const Chest = ({displayMuscles}) =>{
             </div>
 
             <div className="info-chest">
-                <p className="title-info">Dumbbells</p>
+                <p className="title-info-chest">Dumbbells</p>
                 <p>
                     The best chest exercises with dumbbells are bench press with dumbbells and dumbbell flys. <br />
                     The good thing is that you can position the bench however you want. <br />
@@ -37,7 +37,7 @@ const Chest = ({displayMuscles}) =>{
             </div>
 
             <div className="info-chest">
-                <p className="title-info">Bodyweight</p>
+                <p className="title-info-chest">Bodyweight</p>
                 <p>
                     The best chest exercises with bodyweight are push-ups and dips. <br />
                     Both exercises strike every part of your chest but the main thing about push-ups is the top and middle chest. <br />
