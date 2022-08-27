@@ -22,13 +22,13 @@
     width: 1000px;
 }
 
-.title-info{
+.title-info-chest{
     font-size: 20px;
     font-style: italic;
     padding-bottom: 10px;
 }
 
-.title-info::after{
+.title-info-chest::after{
     content:"";
     display: block;
     width: 150px;
