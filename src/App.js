@@ -50,7 +50,9 @@ const App = () =>{
             }
 
             {abdominals === true && 
-                <Abdominals />
+                <Abdominals 
+                    displayMuscles={displayMuscles}
+                />
             }
 
         </div>
