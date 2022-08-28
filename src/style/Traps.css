@@ -1,0 +1,7 @@
+.traps{
+    display: grid;
+    place-items: center;
+    font-family: 'Kanit', sans-serif;
+    background-color: rgb(240,240,240);
+    padding: 20px 0;
+}
