@@ -3,29 +3,41 @@ import Chest from "./components/Chest";
 import Muscles from "./components/Muscles";
 import Navbar from "./components/Navbar";
 import Abdominals from "./components/Abdominals";
+import Traps from "./components/Traps";
 
 const App = () =>{
 
     const [muscles, setMuscles] = React.useState(true);
     const [chest, setChest] = React.useState(false);
     const [abdominals, setAbdominals] = React.useState(false);
+    const [traps, setTraps] = React.useState(false);
 
     const displayMuscles = () =>{
         document.body.scrollIntoView();
         setMuscles(true);
         setChest(false);
         setAbdominals(false);
+        setTraps(false);
     };
 
     const displayChest = () =>{
         setChest(true);
         setMuscles(false);
         setAbdominals(false);
+        setTraps(false)
     };
 
     const displayAbdominals = () =>{
         setAbdominals(true);
         setMuscles(false);
+        setChest(false);
+        setTraps(false);
+    };
+
+    const displayTraps = () =>{
+        setTraps(true);
+        setMuscles(false);
+        setAbdominals(false);
         setChest(false);
     };
 
@@ -40,6 +52,7 @@ const App = () =>{
                 <Muscles 
                     displayChest={displayChest}
                     displayAbdominals={displayAbdominals}
+                    displayTraps={displayTraps}
                 />
             }
 
@@ -53,6 +66,10 @@ const App = () =>{
                 <Abdominals 
                     displayMuscles={displayMuscles}
                 />
+            }
+
+            {traps === true &&
+                <Traps />
             }
 
         </div>
