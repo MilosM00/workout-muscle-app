@@ -69,7 +69,9 @@ const App = () =>{
             }
 
             {traps === true &&
-                <Traps />
+                <Traps 
+                    displayMuscles={displayMuscles}
+                />
             }
 
         </div>
