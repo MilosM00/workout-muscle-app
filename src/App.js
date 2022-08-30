@@ -4,6 +4,7 @@ import Muscles from "./components/Muscles";
 import Navbar from "./components/Navbar";
 import Abdominals from "./components/Abdominals";
 import Traps from "./components/Traps";
+import LowerTraps from "./components/LowerTraps";
 
 const App = () =>{
 
@@ -11,6 +12,7 @@ const App = () =>{
     const [chest, setChest] = React.useState(false);
     const [abdominals, setAbdominals] = React.useState(false);
     const [traps, setTraps] = React.useState(false);
+    const [lowerTraps, setLowerTraps] = React.useState(false);
 
     const displayMuscles = () =>{
         document.body.scrollIntoView();
@@ -18,13 +20,15 @@ const App = () =>{
         setChest(false);
         setAbdominals(false);
         setTraps(false);
+        setLowerTraps(false);
     };
 
     const displayChest = () =>{
         setChest(true);
         setMuscles(false);
         setAbdominals(false);
-        setTraps(false)
+        setTraps(false);
+        setLowerTraps(false);
     };
 
     const displayAbdominals = () =>{
@@ -32,10 +36,20 @@ const App = () =>{
         setMuscles(false);
         setChest(false);
         setTraps(false);
+        setLowerTraps(false);
     };
 
     const displayTraps = () =>{
         setTraps(true);
+        setMuscles(false);
+        setAbdominals(false);
+        setChest(false);
+        setLowerTraps(false);
+    };
+
+    const displayLowerTraps = () =>{
+        setLowerTraps(true);
+        setTraps(false);
         setMuscles(false);
         setAbdominals(false);
         setChest(false);
@@ -53,6 +67,7 @@ const App = () =>{
                     displayChest={displayChest}
                     displayAbdominals={displayAbdominals}
                     displayTraps={displayTraps}
+                    displayLowerTraps={displayLowerTraps}
                 />
             }
 
@@ -70,6 +85,12 @@ const App = () =>{
 
             {traps === true &&
                 <Traps 
+                    displayMuscles={displayMuscles}
+                />
+            }
+
+            {lowerTraps === true &&
+                <LowerTraps 
                     displayMuscles={displayMuscles}
                 />
             }
