@@ -90,6 +90,7 @@ const Muscles = (props) =>{
                         className="button-muscle"
                         onMouseEnter={() => setImage(4)} 
                         onMouseLeave={() => setImage(0)}
+                        onClick={props.displayLats}
                     >
                         Lats
                     </button>
