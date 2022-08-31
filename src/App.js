@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Abdominals from "./components/Abdominals";
 import Traps from "./components/Traps";
 import LowerTraps from "./components/LowerTraps";
+import Lats from "./components/Lats";
 
 const App = () =>{
 
@@ -13,6 +14,7 @@ const App = () =>{
     const [abdominals, setAbdominals] = React.useState(false);
     const [traps, setTraps] = React.useState(false);
     const [lowerTraps, setLowerTraps] = React.useState(false);
+    const [lats, setLats] = React.useState(false);
 
     const displayMuscles = () =>{
         document.body.scrollIntoView();
@@ -21,6 +23,7 @@ const App = () =>{
         setAbdominals(false);
         setTraps(false);
         setLowerTraps(false);
+        setLats(false);
     };
 
     const displayChest = () =>{
@@ -29,6 +32,7 @@ const App = () =>{
         setAbdominals(false);
         setTraps(false);
         setLowerTraps(false);
+        setLats(false);
     };
 
     const displayAbdominals = () =>{
@@ -37,6 +41,7 @@ const App = () =>{
         setChest(false);
         setTraps(false);
         setLowerTraps(false);
+        setLats(false);
     };
 
     const displayTraps = () =>{
@@ -45,10 +50,21 @@ const App = () =>{
         setAbdominals(false);
         setChest(false);
         setLowerTraps(false);
+        setLats(false);
     };
 
     const displayLowerTraps = () =>{
         setLowerTraps(true);
+        setTraps(false);
+        setMuscles(false);
+        setAbdominals(false);
+        setChest(false);
+        setLats(false);
+    };
+
+    const displayLats = () =>{
+        setLats(true);
+        setLowerTraps(false);
         setTraps(false);
         setMuscles(false);
         setAbdominals(false);
@@ -68,6 +84,7 @@ const App = () =>{
                     displayAbdominals={displayAbdominals}
                     displayTraps={displayTraps}
                     displayLowerTraps={displayLowerTraps}
+                    displayLats={displayLats}
                 />
             }
 
@@ -91,6 +108,12 @@ const App = () =>{
 
             {lowerTraps === true &&
                 <LowerTraps 
+                    displayMuscles={displayMuscles}
+                />
+            }
+
+            {lats === true &&
+                <Lats 
                     displayMuscles={displayMuscles}
                 />
             }
