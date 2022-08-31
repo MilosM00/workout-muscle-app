@@ -11,7 +11,8 @@ const LowerTraps = ({displayMuscles}) =>{
             <div className="info-lower-traps">
                 <p className="title-info-lower-traps">Barbells</p>
                 <p>
-
+                    The best barbell exercises for lower traps are barbell rear delt row and lat pull-down, behind the head. <br />
+                    Both exercises strike lower traps, however, the lat pull-down behind the head strike more part of the back.
                 </p>
             </div>
 
@@ -23,7 +24,8 @@ const LowerTraps = ({displayMuscles}) =>{
             <div className="info-lower-traps">
                 <p className="title-info-lower-traps">Dumbbells</p>
                 <p>
-
+                    The best exercises for lower traps are dumbbell rear delt row and dumbbell flys. <br />
+                    Both exercises strike very well.
                 </p>
             </div>
 
@@ -35,7 +37,8 @@ const LowerTraps = ({displayMuscles}) =>{
             <div className="info-lower-traps">
                 <p className="title-info-lower-traps">Bodyweight</p>
                 <p>
-
+                    The best exercises for lower traps with bodyweight are pull-ups with a shorter grip. <br />
+                    This is the best bodyweight exercise for the back. It strikes every part of the back.
                 </p>
             </div>
 
