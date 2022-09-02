@@ -11,7 +11,8 @@ const Lats = ({displayMuscles}) =>{
             <div className="info-lats">
                 <p className="title-info-lats">Barbells</p>
                 <p>
-
+                    The best lats exercises with a barbell are barbell row and landmine barbell row. <br />
+                    Both of the exercises strike very well.
                 </p>
             </div>
 
@@ -23,7 +24,8 @@ const Lats = ({displayMuscles}) =>{
             <div className="info-lats">
                 <p className="title-info-lats">Dumbbells</p>
                 <p>
-
+                    The best lats exercises with a dumbbell are dumbbell row and one arm dumbbell row. <br />
+                    Both of the exercises strike very well.
                 </p>
             </div>
 
@@ -35,7 +37,9 @@ const Lats = ({displayMuscles}) =>{
             <div className="info-lats">
                 <p className="title-info-lats">Bodyweight</p>
                 <p>
-
+                    The best exercises for lats are wide pull-ups and wide push-ups. <br />
+                    Pull-ups with a wide grip are hard exercises but strike very well. <br />
+                    However, wide push-ups besides lats strike chests, so it is best to do this exercise at the end of training.
                 </p>
             </div>
 
