@@ -99,6 +99,7 @@ const Muscles = (props) =>{
                         className="button-muscle"
                         onMouseEnter={() => setImage(5)} 
                         onMouseLeave={() => setImage(0)}
+                        onClick={props.displayLowerBack}
                     >
                         Lower Back
                     </button>
