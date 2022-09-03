@@ -11,7 +11,8 @@ const LowerBack = ({displayMuscles}) =>{
             <div className="info-lower-back">
                 <p className="title-info-lower-back">Barbells</p>
                 <p>
-
+                    The best exercises for the lower back with barbells are deadlifts and sumo deadlifts. <br />
+                    Both of the exercises strike very well and it is for advanced exercisers.
                 </p>
             </div>
 
@@ -23,7 +24,8 @@ const LowerBack = ({displayMuscles}) =>{
             <div className="info-lower-back">
                 <p className="title-info-lower-back">Dumbbells</p>
                 <p>
-
+                    The best exercises for the lower back with dumbbells are deadlifts. <br />
+                    Both of the exercises strike very well and it is for intermedate exercisers.
                 </p>
             </div>
 
@@ -35,7 +37,9 @@ const LowerBack = ({displayMuscles}) =>{
             <div className="info-lower-back">
                 <p className="title-info-lower-back">Bodyweight</p>
                 <p>
-
+                    The best exercises for the lower back with bodyweight are these two exercises. <br />
+                    This first exercise works on the machine, if it is easy for you, you can hold weight to make it harder. <br />
+                    Both of the exercises strike well and it is for beginner exercisers.
                 </p>
             </div>
 
