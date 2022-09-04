@@ -121,6 +121,7 @@ const Muscles = (props) =>{
                         className="button-muscle"
                         onMouseEnter={() => setImage(8)} 
                         onMouseLeave={() => setImage(0)}
+                        onClick={props.displayBiceps}
                     >
                         Biceps
                     </button>
