@@ -1,0 +1,37 @@
+.triceps{
+    display: grid;
+    place-items: center;
+    background-color: rgb(240, 240, 240);
+    font-family: 'Kanit', sans-serif;
+    padding: 20px 0;
+}
+
+.inline-triceps{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-triceps{
+    color: rgb(0, 102, 178);
+    font-size: 30px;
+}
+
+.info-triceps{
+    padding: 50px 0;
+    width: 1000px;
+}
+
+.title-info-triceps{
+    font-size: 20px;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+.title-info-triceps::after{
+    content:"";
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: rgb(0, 102, 178);
+}
