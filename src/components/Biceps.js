@@ -6,7 +6,7 @@ const Biceps = ({displayMuscles}) =>{
 
         <div className="biceps">
 
-            <p className="title-biceps">biceps Exercises</p>
+            <p className="title-biceps">Biceps Exercises</p>
 
             <div className="info-biceps">
                 <p className="title-info-biceps">Barbells</p>
