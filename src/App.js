@@ -11,6 +11,7 @@ import LowerBack from "./components/LowerBack";
 import Shoulders from "./components/Shoulders";
 import Biceps from "./components/Biceps";
 import Triceps from "./components/Triceps";
+import Forearms from "./components/Forearms";
 
 const App = () =>{
 
@@ -24,6 +25,7 @@ const App = () =>{
     const [shoulders, setShoulders] = React.useState(false);
     const [biceps, setBiceps] = React.useState(false);
     const [triceps, setTriceps] = React.useState(false);
+    const [forearms, setForearms] = React.useState(false);
 
     const displayMuscles = () =>{
         document.body.scrollIntoView();
@@ -37,6 +39,7 @@ const App = () =>{
         setShoulders(false);
         setBiceps(false);
         setTriceps(false);
+        setForearms(false);
     };
 
     const displayChest = () =>{
@@ -50,6 +53,7 @@ const App = () =>{
         setShoulders(false);
         setBiceps(false);
         setTriceps(false);
+        setForearms(false);
     };
 
     const displayAbdominals = () =>{
@@ -63,6 +67,7 @@ const App = () =>{
         setShoulders(false);
         setBiceps(false);
         setTriceps(false);
+        setForearms(false);
     };
 
     const displayTraps = () =>{
@@ -76,6 +81,7 @@ const App = () =>{
         setShoulders(false);
         setBiceps(false);
         setTriceps(false);
+        setForearms(false);
     };
 
     const displayLowerTraps = () =>{
@@ -89,6 +95,7 @@ const App = () =>{
         setShoulders(false);
         setBiceps(false);
         setTriceps(false);
+        setForearms(false);
     };
 
     const displayLats = () =>{
@@ -102,6 +109,7 @@ const App = () =>{
         setShoulders(false);
         setBiceps(false);
         setTriceps(false);
+        setForearms(false);
     };
 
     const displayLowerBack = () =>{
@@ -115,6 +123,7 @@ const App = () =>{
         setShoulders(false);
         setBiceps(false);
         setTriceps(false);
+        setForearms(false);
     };
 
     const displayShoulders = () =>{
@@ -128,6 +137,7 @@ const App = () =>{
         setChest(false);
         setBiceps(false);
         setTriceps(false);
+        setForearms(false);
     };
 
     const displayBiceps = () =>{
@@ -141,10 +151,26 @@ const App = () =>{
         setAbdominals(false);
         setChest(false);
         setTriceps(false);
+        setForearms(false);
     };
 
     const displayTriceps = () =>{
         setTriceps(true);
+        setBiceps(false);
+        setShoulders(false);
+        setLowerBack(false);
+        setLats(false);
+        setLowerTraps(false);
+        setTraps(false);
+        setMuscles(false);
+        setAbdominals(false);
+        setChest(false);
+        setForearms(false);
+    };
+
+    const displayForearms = () =>{
+        setForearms(true);
+        setTriceps(false);
         setBiceps(false);
         setShoulders(false);
         setLowerBack(false);
@@ -174,6 +200,7 @@ const App = () =>{
                     displayShoulders={displayShoulders}
                     displayBiceps={displayBiceps}
                     displayTriceps={displayTriceps}
+                    displayForearms={displayForearms}
                 />
             }
 
@@ -227,6 +254,12 @@ const App = () =>{
 
             {triceps === true &&
                 <Triceps 
+                    displayMuscles={displayMuscles}
+                />
+            }
+
+            {forearms === true &&
+                <Forearms
                     displayMuscles={displayMuscles}
                 />
             }
