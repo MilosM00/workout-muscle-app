@@ -152,6 +152,7 @@ const Muscles = (props) =>{
                         className="button-muscle"
                         onMouseEnter={() => setImage(11)} 
                         onMouseLeave={() => setImage(0)}
+                        onClick={props.displayQuadriceps}
                     >
                         Quadriceps
                     </button>
