@@ -11,7 +11,8 @@ const Forearms = ({displayMuscles}) =>{
             <div className="info-forearms">
                 <p className="title-info-forearms">Barbells</p>
                 <p>
-
+                    The best exercises with barbells for forearms are those two exercises. <br />
+                    Both of the exercises strike very well and those are for advanced exercisers.
                 </p>
             </div>
 
@@ -23,7 +24,8 @@ const Forearms = ({displayMuscles}) =>{
             <div className="info-forearms">
                 <p className="title-info-forearms">Dumbbells</p>
                 <p>
-
+                    The best exercises with dumbbells for forearms are those two exercises. <br />
+                    Both of the exercises strike very well and those are for intermediate exercisers.
                 </p>
             </div>
 
@@ -35,7 +37,8 @@ const Forearms = ({displayMuscles}) =>{
             <div className="info-forearms">
                 <p className="title-info-forearms">Bodyweight</p>
                 <p>
-
+                    The best exercises with bodyweight for forearms are those two exercises. <br />
+                    Both of the exercises strike very well and those are for beginners exercisers.
                 </p>
             </div>
 
