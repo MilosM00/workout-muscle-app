@@ -13,6 +13,7 @@ import Biceps from "./components/Biceps";
 import Triceps from "./components/Triceps";
 import Forearms from "./components/Forearms";
 import Quadriceps from "./components/Quadriceps";
+import Hamstrings from "./components/Hamstrings";
 
 const App = () =>{
 
@@ -28,6 +29,7 @@ const App = () =>{
     const [triceps, setTriceps] = React.useState(false);
     const [forearms, setForearms] = React.useState(false);
     const [quadriceps, setQuadriceps] = React.useState(false);
+    const [hamstrings, setHamstrings] = React.useState(false);
 
     const displayMuscles = () =>{
         document.body.scrollIntoView();
@@ -43,6 +45,7 @@ const App = () =>{
         setTriceps(false);
         setForearms(false);
         setQuadriceps(false);
+        setHamstrings(false);
     };
 
     const displayChest = () =>{
@@ -58,6 +61,7 @@ const App = () =>{
         setTriceps(false);
         setForearms(false);
         setQuadriceps(false);
+        setHamstrings(false);
     };
 
     const displayAbdominals = () =>{
@@ -73,6 +77,7 @@ const App = () =>{
         setTriceps(false);
         setForearms(false);
         setQuadriceps(false);
+        setHamstrings(false);
     };
 
     const displayTraps = () =>{
@@ -88,6 +93,7 @@ const App = () =>{
         setTriceps(false);
         setForearms(false);
         setQuadriceps(false);
+        setHamstrings(false);
     };
 
     const displayLowerTraps = () =>{
@@ -103,6 +109,7 @@ const App = () =>{
         setTriceps(false);
         setForearms(false);
         setQuadriceps(false);
+        setHamstrings(false);
     };
 
     const displayLats = () =>{
@@ -118,6 +125,7 @@ const App = () =>{
         setTriceps(false);
         setForearms(false);
         setQuadriceps(false);
+        setHamstrings(false);
     };
 
     const displayLowerBack = () =>{
@@ -133,6 +141,7 @@ const App = () =>{
         setTriceps(false);
         setForearms(false);
         setQuadriceps(false);
+        setHamstrings(false);
     };
 
     const displayShoulders = () =>{
@@ -148,6 +157,7 @@ const App = () =>{
         setTriceps(false);
         setForearms(false);
         setQuadriceps(false);
+        setHamstrings(false);
     };
 
     const displayBiceps = () =>{
@@ -163,6 +173,7 @@ const App = () =>{
         setTriceps(false);
         setForearms(false);
         setQuadriceps(false);
+        setHamstrings(false);
     };
 
     const displayTriceps = () =>{
@@ -178,6 +189,7 @@ const App = () =>{
         setChest(false);
         setForearms(false);
         setQuadriceps(false);
+        setHamstrings(false);
     };
 
     const displayForearms = () =>{
@@ -193,10 +205,28 @@ const App = () =>{
         setAbdominals(false);
         setChest(false);
         setQuadriceps(false);
+        setHamstrings(false);
     };
 
     const displayQuadriceps = () =>{
         setQuadriceps(true);
+        setForearms(false);
+        setTriceps(false);
+        setBiceps(false);
+        setShoulders(false);
+        setLowerBack(false);
+        setLats(false);
+        setLowerTraps(false);
+        setTraps(false);
+        setMuscles(false);
+        setAbdominals(false);
+        setChest(false);
+        setHamstrings(false);
+    };
+
+    const displayHamstrings = () =>{
+        setHamstrings(true);
+        setQuadriceps(false);
         setForearms(false);
         setTriceps(false);
         setBiceps(false);
@@ -230,6 +260,7 @@ const App = () =>{
                     displayTriceps={displayTriceps}
                     displayForearms={displayForearms}
                     displayQuadriceps={displayQuadriceps}
+                    displayHamstrings={displayHamstrings}
                 />
             }
 
@@ -295,6 +326,12 @@ const App = () =>{
             
             {quadriceps === true &&
                 <Quadriceps 
+                    displayMuscles={displayMuscles}
+                />
+            }
+
+            {hamstrings === true &&
+                <Hamstrings 
                     displayMuscles={displayMuscles}
                 />
             }
