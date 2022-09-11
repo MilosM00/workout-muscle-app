@@ -14,6 +14,7 @@ import Triceps from "./components/Triceps";
 import Forearms from "./components/Forearms";
 import Quadriceps from "./components/Quadriceps";
 import Hamstrings from "./components/Hamstrings";
+import Glutes from "./components/Glutes";
 
 const App = () =>{
 
@@ -30,6 +31,7 @@ const App = () =>{
     const [forearms, setForearms] = React.useState(false);
     const [quadriceps, setQuadriceps] = React.useState(false);
     const [hamstrings, setHamstrings] = React.useState(false);
+    const [glutes, setGlutes] = React.useState(false);
 
     const displayMuscles = () =>{
         document.body.scrollIntoView();
@@ -46,6 +48,7 @@ const App = () =>{
         setForearms(false);
         setQuadriceps(false);
         setHamstrings(false);
+        setGlutes(false);
     };
 
     const displayChest = () =>{
@@ -62,6 +65,7 @@ const App = () =>{
         setForearms(false);
         setQuadriceps(false);
         setHamstrings(false);
+        setGlutes(false);
     };
 
     const displayAbdominals = () =>{
@@ -78,6 +82,7 @@ const App = () =>{
         setForearms(false);
         setQuadriceps(false);
         setHamstrings(false);
+        setGlutes(false);
     };
 
     const displayTraps = () =>{
@@ -94,6 +99,7 @@ const App = () =>{
         setForearms(false);
         setQuadriceps(false);
         setHamstrings(false);
+        setGlutes(false);
     };
 
     const displayLowerTraps = () =>{
@@ -110,6 +116,7 @@ const App = () =>{
         setForearms(false);
         setQuadriceps(false);
         setHamstrings(false);
+        setGlutes(false);
     };
 
     const displayLats = () =>{
@@ -126,6 +133,7 @@ const App = () =>{
         setForearms(false);
         setQuadriceps(false);
         setHamstrings(false);
+        setGlutes(false);
     };
 
     const displayLowerBack = () =>{
@@ -142,6 +150,7 @@ const App = () =>{
         setForearms(false);
         setQuadriceps(false);
         setHamstrings(false);
+        setGlutes(false);
     };
 
     const displayShoulders = () =>{
@@ -158,6 +167,7 @@ const App = () =>{
         setForearms(false);
         setQuadriceps(false);
         setHamstrings(false);
+        setGlutes(false);
     };
 
     const displayBiceps = () =>{
@@ -174,6 +184,7 @@ const App = () =>{
         setForearms(false);
         setQuadriceps(false);
         setHamstrings(false);
+        setGlutes(false);
     };
 
     const displayTriceps = () =>{
@@ -190,6 +201,7 @@ const App = () =>{
         setForearms(false);
         setQuadriceps(false);
         setHamstrings(false);
+        setGlutes(false);
     };
 
     const displayForearms = () =>{
@@ -206,6 +218,7 @@ const App = () =>{
         setChest(false);
         setQuadriceps(false);
         setHamstrings(false);
+        setGlutes(false);
     };
 
     const displayQuadriceps = () =>{
@@ -222,10 +235,29 @@ const App = () =>{
         setAbdominals(false);
         setChest(false);
         setHamstrings(false);
+        setGlutes(false);
     };
 
     const displayHamstrings = () =>{
         setHamstrings(true);
+        setQuadriceps(false);
+        setForearms(false);
+        setTriceps(false);
+        setBiceps(false);
+        setShoulders(false);
+        setLowerBack(false);
+        setLats(false);
+        setLowerTraps(false);
+        setTraps(false);
+        setMuscles(false);
+        setAbdominals(false);
+        setChest(false);
+        setGlutes(false);
+    };
+
+    const displayGlutes = () =>{
+        setGlutes(true);
+        setHamstrings(false);
         setQuadriceps(false);
         setForearms(false);
         setTriceps(false);
@@ -261,6 +293,7 @@ const App = () =>{
                     displayForearms={displayForearms}
                     displayQuadriceps={displayQuadriceps}
                     displayHamstrings={displayHamstrings}
+                    displayGlutes={displayGlutes}
                 />
             }
 
@@ -332,6 +365,12 @@ const App = () =>{
 
             {hamstrings === true &&
                 <Hamstrings 
+                    displayMuscles={displayMuscles}
+                />
+            }
+
+            {glutes === true &&
+                <Glutes 
                     displayMuscles={displayMuscles}
                 />
             }
