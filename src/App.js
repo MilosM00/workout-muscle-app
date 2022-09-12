@@ -15,6 +15,7 @@ import Forearms from "./components/Forearms";
 import Quadriceps from "./components/Quadriceps";
 import Hamstrings from "./components/Hamstrings";
 import Glutes from "./components/Glutes";
+import Calves from "./components/Calves";
 
 const App = () =>{
 
@@ -32,6 +33,7 @@ const App = () =>{
     const [quadriceps, setQuadriceps] = React.useState(false);
     const [hamstrings, setHamstrings] = React.useState(false);
     const [glutes, setGlutes] = React.useState(false);
+    const [calves, setCalves] = React.useState(false);
 
     const displayMuscles = () =>{
         document.body.scrollIntoView();
@@ -49,6 +51,7 @@ const App = () =>{
         setQuadriceps(false);
         setHamstrings(false);
         setGlutes(false);
+        setCalves(false);
     };
 
     const displayChest = () =>{
@@ -66,6 +69,7 @@ const App = () =>{
         setQuadriceps(false);
         setHamstrings(false);
         setGlutes(false);
+        setCalves(false);
     };
 
     const displayAbdominals = () =>{
@@ -83,6 +87,7 @@ const App = () =>{
         setQuadriceps(false);
         setHamstrings(false);
         setGlutes(false);
+        setCalves(false);
     };
 
     const displayTraps = () =>{
@@ -100,6 +105,7 @@ const App = () =>{
         setQuadriceps(false);
         setHamstrings(false);
         setGlutes(false);
+        setCalves(false);
     };
 
     const displayLowerTraps = () =>{
@@ -117,6 +123,7 @@ const App = () =>{
         setQuadriceps(false);
         setHamstrings(false);
         setGlutes(false);
+        setCalves(false);
     };
 
     const displayLats = () =>{
@@ -134,6 +141,7 @@ const App = () =>{
         setQuadriceps(false);
         setHamstrings(false);
         setGlutes(false);
+        setCalves(false);
     };
 
     const displayLowerBack = () =>{
@@ -151,6 +159,7 @@ const App = () =>{
         setQuadriceps(false);
         setHamstrings(false);
         setGlutes(false);
+        setCalves(false);
     };
 
     const displayShoulders = () =>{
@@ -168,6 +177,7 @@ const App = () =>{
         setQuadriceps(false);
         setHamstrings(false);
         setGlutes(false);
+        setCalves(false);
     };
 
     const displayBiceps = () =>{
@@ -185,6 +195,7 @@ const App = () =>{
         setQuadriceps(false);
         setHamstrings(false);
         setGlutes(false);
+        setCalves(false);
     };
 
     const displayTriceps = () =>{
@@ -202,6 +213,7 @@ const App = () =>{
         setQuadriceps(false);
         setHamstrings(false);
         setGlutes(false);
+        setCalves(false);
     };
 
     const displayForearms = () =>{
@@ -219,6 +231,7 @@ const App = () =>{
         setQuadriceps(false);
         setHamstrings(false);
         setGlutes(false);
+        setCalves(false);
     };
 
     const displayQuadriceps = () =>{
@@ -236,6 +249,7 @@ const App = () =>{
         setChest(false);
         setHamstrings(false);
         setGlutes(false);
+        setCalves(false);
     };
 
     const displayHamstrings = () =>{
@@ -253,10 +267,30 @@ const App = () =>{
         setAbdominals(false);
         setChest(false);
         setGlutes(false);
+        setCalves(false);
     };
 
     const displayGlutes = () =>{
         setGlutes(true);
+        setHamstrings(false);
+        setQuadriceps(false);
+        setForearms(false);
+        setTriceps(false);
+        setBiceps(false);
+        setShoulders(false);
+        setLowerBack(false);
+        setLats(false);
+        setLowerTraps(false);
+        setTraps(false);
+        setMuscles(false);
+        setAbdominals(false);
+        setChest(false);
+        setCalves(false);
+    };
+
+    const displayCalves = () =>{
+        setCalves(true);
+        setGlutes(false);
         setHamstrings(false);
         setQuadriceps(false);
         setForearms(false);
@@ -294,6 +328,7 @@ const App = () =>{
                     displayQuadriceps={displayQuadriceps}
                     displayHamstrings={displayHamstrings}
                     displayGlutes={displayGlutes}
+                    displayCalves={displayCalves}
                 />
             }
 
@@ -371,6 +406,12 @@ const App = () =>{
 
             {glutes === true &&
                 <Glutes 
+                    displayMuscles={displayMuscles}
+                />
+            }
+
+            {calves === true &&
+                <Calves 
                     displayMuscles={displayMuscles}
                 />
             }
