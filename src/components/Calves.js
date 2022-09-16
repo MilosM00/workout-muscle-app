@@ -28,8 +28,8 @@ const Calves = ({displayMuscles}) =>{
             </div>
 
             <div className="inline-calves">
-                <img src="https://thumbs.gfycat.com/HarmlessSophisticatedFairyfly-size_restricted.gif" alt="calves" width="400" height="350" />
-                <img src="https://thumbs.gfycat.com/NearShamelessFlee-max-1mb.gif" alt="calves" width="400" height="350" />
+                <img src="https://thumbs.gfycat.com/HarmlessSophisticatedFairyfly-size_restricted.gif" alt="calves" width="350" height="300" />
+                <img src="https://thumbs.gfycat.com/NearShamelessFlee-max-1mb.gif" alt="calves" width="350" height="300" />
             </div>
 
             <div className="info-calves">
@@ -40,7 +40,7 @@ const Calves = ({displayMuscles}) =>{
             </div>
 
             <div className="inline-calves">
-                <img src="https://thumbs.gfycat.com/EntireThatGazelle-max-1mb.gif" alt="calves" width="400" height="350"/>
+                <img src="https://thumbs.gfycat.com/EntireThatGazelle-max-1mb.gif" alt="calves" width="350" height="350"/>
                 <img src="https://i.pinimg.com/originals/ff/17/23/ff1723a0aafc3cd3054cefb2cde3f417.gif" alt="calves" width="500" height="350" />
             </div>
 
