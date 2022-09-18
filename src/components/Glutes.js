@@ -10,8 +10,9 @@ const Glutes = ({displayMuscles}) =>{
 
             <div className="info-glutes">
                 <p className="title-info-glutes">Barbells</p>
-                <p>
-
+                <p>  
+                    The best exercises with barbells for glutes are those two exercises. <br />
+                    Both of the exercises strike very well and those are for advanced exercisers.
                 </p>
             </div>
 
@@ -23,7 +24,8 @@ const Glutes = ({displayMuscles}) =>{
             <div className="info-glutes">
                 <p className="title-info-glutes">Dumbbells</p>
                 <p>
-
+                    The best exercises with dumbbells for glutes are those two exercises. <br />
+                    Both of the exercises strike very well and those are for intermediate exercisers.
                 </p>
             </div>
 
@@ -35,7 +37,8 @@ const Glutes = ({displayMuscles}) =>{
             <div className="info-glutes">
                 <p className="title-info-glutes">Bodyweight</p>
                 <p>
-
+                    The best exercises with bodyweight for glutes are those two exercises. <br />
+                    Both of the exercises strike very well and those are for beginners exercisers.
                 </p>
             </div>
 
