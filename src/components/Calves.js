@@ -11,7 +11,8 @@ const Calves = ({displayMuscles}) =>{
             <div className="info-calves">
                 <p className="title-info-calves">Barbells</p>
                 <p>
-
+                    The best exercises with barbells for calves are those two exercises. <br />
+                    Both of the exercises strike very well and those are for advanced exercisers.
                 </p>
             </div>
 
@@ -23,7 +24,8 @@ const Calves = ({displayMuscles}) =>{
             <div className="info-calves">
                 <p className="title-info-calves">Dumbbells</p>
                 <p>
-
+                    The best exercises with dumbbells for calves are those two exercises. <br />
+                    Both of the exercises strike very well and those are for intermediate exercisers.
                 </p>
             </div>
 
@@ -35,7 +37,8 @@ const Calves = ({displayMuscles}) =>{
             <div className="info-calves">
                 <p className="title-info-calves">Bodyweight</p>
                 <p>
-
+                    The best exercises with bodyweight for calves are those two exercises. <br />
+                    Both of the exercises strike very well and those are for beginners exercisers.
                 </p>
             </div>
 
