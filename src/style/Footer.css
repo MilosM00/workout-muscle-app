@@ -21,3 +21,10 @@
 .info-footer a:hover{
     text-decoration: underline;
 }
+
+
+@media (max-height: 720px) {
+    .footer{
+        position: relative !important;
+    }
+}
