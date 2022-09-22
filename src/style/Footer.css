@@ -23,8 +23,10 @@
 }
 
 
-@media (max-height: 720px) {
-    .footer{
-        position: relative !important;
+@media (min-width: 530px) {
+    @media (max-height: 830px) {
+        .footer{
+            position: relative !important;
+        }
     }
 }
